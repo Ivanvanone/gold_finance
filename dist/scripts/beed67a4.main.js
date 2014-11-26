@@ -1,0 +1,1 @@
+console.log("'Allo 'Allo!"),function(){"use strict";console.log("'Allo from CoffeeScript!")}.call(this);

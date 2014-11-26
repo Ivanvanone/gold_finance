@@ -1,0 +1,10 @@
+{
+  "name": "gold-finance",
+  "version": "0.0.0",
+  "dependencies": {
+    "bootstrap": "~3.0.0",
+    "font-awesome": "~4.0.0"
+  },
+  "devDependencies": {}
+}
+
