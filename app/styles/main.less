@@ -3,13 +3,18 @@
 
 @import "../bower_components/font-awesome/less/font-awesome.less";
 @fa-font-path: "../fonts/font-awesome";
-.padding {
-	padding: 30px 0 50px;
-}
+@bg-color: #009ade;
+// .padding { padding: 30px 0 50px;}
+.padding { padding: 60px 0 80px;}
+.text-shadow {text-shadow: 1px 1px 1px rgba(0,0,0,.5);}
+.second-row {margin-top: 20px;}
 .title-margin {
 	margin-bottom: 30px;
 }
-
+.glyphicon {
+	margin-right: 15px;
+	font-size: 22px;
+}
 .container {
 	width: 960px !important;
 	font-size: 16px;
@@ -23,15 +28,41 @@
 	background-attachment: fixed;
 	color: #fff;
 	padding-top: 50px;
+	padding-bottom: 50px;
 	.text-center;
 
 	&__title {
-		font-size: 52px;
+		// font-size: 52px;
+		font-size: 58px;
 	}
 
 	&__text {
+		// font-size: 18px;
+		font-size: 24px;
+		padding: 0 10%;
+	}
+	&__help {
 		font-size: 18px;
-		// padding: 0 15%;
+	}
+	&__btn {
+		.btn;
+		background: transparent;
+		color: #fff;
+		border: 2px solid #00c6ad;
+		border-radius: 0;
+		font-size: 16px;
+		margin-top: 20px;
+		width: 200px;
+		height: 50px;
+		text-transform: uppercase;
+		padding: 0;
+		line-height: 48px;
+		&:hover,
+		&:focus {
+			background: #00c6ad;
+			color: #fff;
+			text-shadow: 1px 1px 1px rgba(0,0,0,.8);
+		}
 	}
 }
 
@@ -42,6 +73,12 @@
 	&__title {
 		.title-margin;
 	}
+	img {
+		margin-bottom: 10px;
+	}
+	p {
+		font-size: 19px;
+	}
 }
 
 .people {
@@ -50,6 +87,9 @@
 
 	&__title {
 		.title-margin;
+	}
+	p {
+		margin-bottom: 30px;
 	}
 }
 
@@ -64,15 +104,33 @@
 
 	&__list {
 		font-size: 19px;
+		list-style: none;
+
+		li {
+			margin-bottom: 15px;
+		}
 	}
 }
 
+.why {
+	background: #f5f5f5;
+	.padding;
+	&__title {
+		font-size: 34px;
+		.title-margin;
+		.text-center;
+	}
+	.row {
+		margin-bottom: 60px;
+	}
+}
 
 .offer {
 	color: #fff;
-	background: #00c6ad;
+	background: @bg-color;
 	.padding;
 	.text-center;
+	.text-shadow;
 	
 	&__title {
 		font-size: 34px;
@@ -84,26 +142,46 @@
 		border: 3px solid #fff;
 		min-height: 100px;
 		padding: 10% 3%;
+		box-shadow: 1px 1px 1px rgba(0,0,0,.5);
 	}
 }
 
 .outsource {
 	.padding;
 	.text-center;
+
+	&__title {
+		font-size: 34px;
+		margin-bottom: 40px;
+	}
+	img {
+		margin-bottom: 10px;
+	}
+	p {
+		font-size: 19px;
+		padding: 0 5%;
+	}
 }
 
 .try {
-	background: #f5f5f5;
+	// background: #f5f5f5;
+	background: #ececec;
 	.padding;
+	padding-bottom: 80px;
 
 	&__title {
+		font-size: 34px;
 		.title-margin;
 		.text-center;
 	}
 
 	&__text {
-		padding: 0 15% 20px;
+		padding: 0 15% 30px;
 		.text-center;
+	}
+
+	&__address {
+		margin-top: 65px;
 	}
 
 	&__how-title {
@@ -117,23 +195,36 @@
 	}
 	&__form {
 		color: #fff;
-		background: #00c6ad;
-		padding: 20px 10% 10%;
-	}
-
-	&__form-title {
-		font-size: 24px;
+		.form-inline;
+		.text-center;
+		margin-bottom: 20px;
 	}
 
 	&__form-btn {
 		.btn;
 		.btn-default;
-		// background: rgba(255,136,51,1);
+		// background: @bg-color;
 		// border-radius: 0;
+		height: 50px;
+		width: 200px;
+		font-size: 20px;
+		border-radius: 4px;
+	}
+	.form-control {
+		height: 50px;
+		width: 250px;
+		font-size: 20px;
+		border-radius: 4px !important;
 	}
 }
 
 .contacts {
-	background: #ececec;
+	background: #ddd;
 	.text-center;
+	height: 40px;
+	line-height: 40px;
+	p {
+		font-size: 14px;
+		margin: 0;
+	}
 }
