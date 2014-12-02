@@ -1,3 +1,10 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800|Roboto:400,500,300,700,900,100,100italic,300italic,400italic,500italic,700italic,900italic&subset=latin,cyrillic);
+.opensans {
+  font-family: 'Open Sans', sans-serif;
+}
+.roboto {
+  font-family: 'Roboto', sans-serif;
+}
 /*! normalize.css v2.1.3 | MIT License | git.io/normalize */
 article,
 aside,
@@ -7308,11 +7315,23 @@ td.visible-print {
 }
 .glyphicon {
   margin-right: 15px;
-  font-size: 22px;
+  font-size: 24px;
 }
 .container {
   width: 960px !important;
-  font-size: 16px;
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Roboto', sans-serif;
+}
+.glyphicon {
+  top: 3px;
 }
 .header {
   min-height: 300px;
@@ -7326,14 +7345,14 @@ td.visible-print {
   text-align: center;
 }
 .header__title {
-  font-size: 58px;
+  font-size: 60px;
 }
 .header__text {
-  font-size: 24px;
+  font-size: 26px;
   padding: 0 10%;
 }
 .header__help {
-  font-size: 18px;
+  font-size: 20px;
 }
 .header__btn {
   display: inline-block;
@@ -7358,7 +7377,7 @@ td.visible-print {
   color: #fff;
   border: 2px solid #00c6ad;
   border-radius: 0;
-  font-size: 16px;
+  font-size: 18px;
   margin-top: 20px;
   width: 200px;
   height: 50px;
@@ -7404,13 +7423,13 @@ fieldset[disabled] .header__btn {
   text-align: center;
 }
 .problems__title {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 .problems img {
   margin-bottom: 10px;
 }
 .problems p {
-  font-size: 19px;
+  font-size: 21px;
 }
 .people {
   padding: 60px 0 80px;
@@ -7420,7 +7439,7 @@ fieldset[disabled] .header__btn {
   margin-bottom: 30px;
 }
 .people p {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 .suffer {
   background: #f5f5f5;
@@ -7431,7 +7450,7 @@ fieldset[disabled] .header__btn {
   text-align: center;
 }
 .suffer__list {
-  font-size: 19px;
+  font-size: 21px;
   list-style: none;
 }
 .suffer__list li {
@@ -7442,8 +7461,8 @@ fieldset[disabled] .header__btn {
   padding: 60px 0 80px;
 }
 .why__title {
-  font-size: 34px;
-  margin-bottom: 30px;
+  font-size: 36px;
+  margin-bottom: 50px;
   text-align: center;
 }
 .why .row {
@@ -7453,42 +7472,74 @@ fieldset[disabled] .header__btn {
   color: #fff;
   background: #009ade;
   padding: 60px 0 80px;
-  text-align: center;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  text-align: center;
 }
 .offer__title {
-  font-size: 34px;
-  margin-bottom: 30px;
+  font-size: 36px;
+  margin-bottom: 40px;
+  text-align: center;
 }
 .offer__item {
-  font-size: 24px;
-  border: 3px solid #fff;
-  min-height: 100px;
-  padding: 10% 3%;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  font-size: 26px;
+  margin-top: 15px;
+}
+.offer .approach {
+  margin-top: 29px;
 }
 .outsource {
   padding: 60px 0 80px;
   text-align: center;
 }
 .outsource__title {
-  font-size: 34px;
-  margin-bottom: 40px;
+  font-size: 36px;
+  margin-bottom: 60px;
 }
 .outsource img {
   margin-bottom: 10px;
 }
 .outsource p {
-  font-size: 19px;
+  font-size: 21px;
   padding: 0 5%;
 }
+.reviews {
+  background: #008675;
+  color: #fff;
+  padding: 60px 0 80px;
+}
+.reviews__title {
+  font-size: 36px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.reviews__logo {
+  background: #ccc;
+  padding: 4px;
+  line-height: 1.42857143;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+.how__title {
+  font-size: 36px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.how h3 {
+  font-size: 16px;
+}
 .try {
-  background: #ececec;
+  background: #ecf0f1;
   padding: 60px 0 80px;
   padding-bottom: 80px;
 }
 .try__title {
-  font-size: 34px;
+  font-size: 36px;
   margin-bottom: 30px;
   text-align: center;
 }
@@ -7499,13 +7550,16 @@ fieldset[disabled] .header__btn {
 .try__address {
   margin-top: 65px;
 }
+.try__list-block {
+  background: #fff;
+}
 .try__how-title {
-  font-size: 24px;
+  font-size: 26px;
   margin-top: 20px;
 }
 .try__list {
   padding-left: 23px;
-  font-size: 17px;
+  font-size: 19px;
 }
 .try__form {
   color: #fff;
@@ -7555,13 +7609,14 @@ fieldset[disabled] .header__btn {
   -ms-user-select: none;
   -o-user-select: none;
   user-select: none;
-  color: #333333;
-  background-color: #ffffff;
-  border-color: #cccccc;
+  background: #37b34a;
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
   height: 50px;
-  width: 200px;
-  font-size: 20px;
+  width: 250px;
+  font-size: 22px;
   border-radius: 4px;
+  margin-left: 8px;
 }
 .try__form-btn:focus {
   outline: thin dotted;
@@ -7591,52 +7646,21 @@ fieldset[disabled] .try__form-btn {
   box-shadow: none;
 }
 .try__form-btn:hover,
-.try__form-btn:focus,
-.try__form-btn:active,
-.try__form-btn.active,
-.open .dropdown-toggle.try__form-btn {
-  color: #333333;
-  background-color: #ebebeb;
-  border-color: #adadad;
-}
-.try__form-btn:active,
-.try__form-btn.active,
-.open .dropdown-toggle.try__form-btn {
-  background-image: none;
-}
-.try__form-btn.disabled,
-.try__form-btn[disabled],
-fieldset[disabled] .try__form-btn,
-.try__form-btn.disabled:hover,
-.try__form-btn[disabled]:hover,
-fieldset[disabled] .try__form-btn:hover,
-.try__form-btn.disabled:focus,
-.try__form-btn[disabled]:focus,
-fieldset[disabled] .try__form-btn:focus,
-.try__form-btn.disabled:active,
-.try__form-btn[disabled]:active,
-fieldset[disabled] .try__form-btn:active,
-.try__form-btn.disabled.active,
-.try__form-btn[disabled].active,
-fieldset[disabled] .try__form-btn.active {
-  background-color: #ffffff;
-  border-color: #cccccc;
-}
-.try__form-btn .badge {
-  color: #ffffff;
-  background-color: #fff;
+.try__form-btn:focus {
+  color: #fff;
+  background: #319f42;
 }
 .try .form-control {
   height: 50px;
   width: 250px;
-  font-size: 20px;
+  font-size: 22px;
   border-radius: 4px !important;
+  margin-right: 8px;
 }
 .contacts {
   background: #ddd;
   text-align: center;
-  height: 40px;
-  line-height: 40px;
+  padding: 15px 0;
 }
 .contacts p {
   font-size: 14px;
