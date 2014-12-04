@@ -1,4 +1,24 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800|Roboto:400,500,300,700,900,100,100italic,300italic,400italic,500italic,700italic,900italic&subset=latin,cyrillic);
+@font-face {
+	font-family: 'Segoe UI';
+	font-style: normal;
+	font-weight: normal;
+	src: url('../fonts/segoeui-webfont.eot');
+	src: local('Segoe UI'),
+	     url('../fonts/segoeui-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('../fonts/segoeui-webfont.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Segoe UI Light';
+	font-style: normal;
+	font-weight: normal;
+	src: url('../fonts/segoeuil-webfont.eot');
+	src: local('Segoe UI Light'),
+		url('../fonts/segoeuil-webfont.eot?#iefix') format('embedded-opentype'),
+	     url('../fonts/segoeuil-webfont.woff') format('woff');
+}
+
+
 .opensans {font-family: 'Open Sans', sans-serif;}
 .roboto {font-family: 'Roboto', sans-serif;}
 
@@ -18,15 +38,17 @@
 	margin-right: 15px;
 	font-size: 24px;
 }
+
+body { padding-top: 50px; }
 .container {
 	width: 960px !important;
 	font-size: 18px;
-	.opensans;
+	font-family: 'Segoe UI';
 }
 
-h1, h2, h3, h4, h5, h6 {.roboto;}
-.glyphicon {
-	top: 3px}
+h1, h2, h3, h4, h5, h6 {font-family: 'Segoe UI Light';}
+
+.glyphicon {top: 3px}
 
 	.header {
 		min-height: 300px;
@@ -92,7 +114,7 @@ h1, h2, h3, h4, h5, h6 {.roboto;}
 .people {
 	.padding;
 	.text-center;
-
+	background: #f5f5f5;
 	&__title {
 		.title-margin;
 	}
@@ -103,7 +125,11 @@ h1, h2, h3, h4, h5, h6 {.roboto;}
 
 .suffer {
 	background: #f5f5f5;
+	// background: #ecf0f1;
+	// background: #009ade;
+	// color: #fff;
 	.padding;
+	// .text-shadow;
 	
 	&__title {
 		.title-margin;
@@ -112,7 +138,6 @@ h1, h2, h3, h4, h5, h6 {.roboto;}
 
 	&__list {
 		font-size: 21px;
-		list-style: none;
 
 		li {
 			margin-bottom: 15px;
@@ -121,7 +146,8 @@ h1, h2, h3, h4, h5, h6 {.roboto;}
 }
 
 .why {
-	background: #f5f5f5;
+	// background: #f5f5f5;
+	// background: #ecf0f1;
 	.padding;
 	&__title {
 		font-size: 36px;
@@ -142,7 +168,7 @@ h1, h2, h3, h4, h5, h6 {.roboto;}
 	
 	&__title {
 		font-size: 36px;
-		margin-bottom: 40px;
+		margin-bottom: 50px;
 		.text-center;
 	}
 	&__item {
@@ -175,35 +201,65 @@ h1, h2, h3, h4, h5, h6 {.roboto;}
 
 .reviews {
 	// background: #0077AB;
-	background: #008675;
-	color: #fff;
+	background: #009ade;
+	// color: #fff;
 	.padding;
 	&__title {
 		font-size: 36px;
-		.title-margin;
 		.text-center;
+		color: #fff;
+		margin-bottom: 50px;
+	}
+	&__item {
+		background: #fff;
+		margin-bottom: 50px;
+		border-radius: 50px;
+		box-shadow: 3px 3px 10px rgba(0,0,0,.3);
+		padding: 20px 44px;
 	}
 	&__logo {
-		background: #ccc;
-		.img-thumbnail;
+		// background: #ccc;
 		// width: 200px;
 		// height: 100px;
 		// border-radius: 150px;
 		// .text-center;
 		// display: table-cell;
 		// vertical-align: middle;
+		margin-top: 60px;
+	}
+	blockquote {
+		border-left: none;
 	}
 }
 
 
 .how {
+	.padding;
 	&__title {
 		font-size: 36px;
-		.title-margin;
+		margin-bottom: 50px;
 		.text-center;
 	}
 	h3 {
-		font-size: 16px;
+		font-size: 21px;
+	}
+	.glyphicon {
+		font-size: 19px;
+		color: #888;
+	}
+	.consult,
+	.solution {
+		margin-bottom: 30px;
+	}
+	.phone {
+		margin-bottom: 39px;
+	}
+	.event,
+	.task {
+		margin-top: 50px;
+	}
+	.event {
+		margin-bottom: 30px;
 	}
 }
 

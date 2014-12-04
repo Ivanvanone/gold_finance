@@ -10,18 +10,69 @@
   <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-  <header class="header">
-    <div class="container">
-      <h1 class="header__title">Золотые финансы</h1>
-      <p class="header__text">Удобное бухгалтерское сопровождение бизнеса <br>Санкт-Петербурга и Москвы</p>
-      <!-- <p class="header__help">Обратитесь к нам и мы вам поможем!</p> -->
-      <button type="button" class="header__btn">Подать заявку</button>   
-    </div>
-  </header>
 
-  <section class="problems">
+  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
-      <h2 class="problems__title">Передайте нам свои проблемы, мы любим их решать</h2>
+      <!-- Brand and toggle get grouped for better mobile display -->
+<!--     <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div> -->
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Link</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+
+
+<header class="header">
+  <div class="container">
+    <h1 class="header__title">Золотые финансы</h1>
+    <p class="header__text">Удобное бухгалтерское сопровождение бизнеса <br>Санкт-Петербурга и Москвы</p>
+    <!-- <p class="header__help">Обратитесь к нам и мы вам поможем!</p> -->
+    <button type="button" class="header__btn">Подать заявку</button>   
+  </div>
+</header>
+
+
+
+
+  <section class="suffer">
+    <div class="container">
+      <h2 class="suffer__title">Уверены, что получаете все?</h2>
+      <!-- <p class="">Сколько денег вы недополучаете из-за того, что следуете стандартным решениям?</p>
+      <p class="">До сих пор платите все налоги, и не знаете о налоговых льготах?</p>
+      <p class="">Используете типовые договора, и страдаете когда что-то идет не так?</p>
+      <p class="">Ругаетесь с налоговой или боитесь туда зайти?</p> -->
+      <ul class="suffer__list">
+        <li>Сколько денег вы теряете из-за того, что следуете стандартным решениям?</li>
+        <li>До сих пор платите все налоги, и не знаете о налоговых льготах?</li>
+        <li>Используете типовые договора, и страдаете когда что-то идет не так?</li>
+        <li>Ругаетесь с налоговой или боитесь туда зайти?</li>
+      </ul>
+    </div>
+  </section>
+
+<section class="problems">
+  <div class="container">
+    <h2 class="problems__title">Передайте нам свои проблемы, мы любим их решать</h2>
       <!-- <ul>
         <li>бухгалтерия и нулевая отчетность</li>
         <li>кадры и заработная плата</li>
@@ -56,21 +107,7 @@
   </section>
 
 
-  <section class="suffer">
-    <div class="container">
-      <h2 class="suffer__title">Уверены, что получаете все?</h2>
-      <!-- <p class="">Сколько денег вы недополучаете из-за того, что следуете стандартным решениям?</p>
-      <p class="">До сих пор платите все налоги, и не знаете о налоговых льготах?</p>
-      <p class="">Используете типовые договора, и страдаете когда что-то идет не так?</p>
-      <p class="">Ругаетесь с налоговой или боитесь туда зайти?</p> -->
-      <ul class="suffer__list">
-        <li><span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span> Сколько денег вы теряете из-за того, что следуете стандартным решениям?</li>
-        <li><span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span> До сих пор платите все налоги, и не знаете о налоговых льготах?</li>
-        <li><span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span> Используете типовые договора, и страдаете когда что-то идет не так?</li>
-        <li><span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span> Ругаетесь с налоговой или боитесь туда зайти?</li>
-      </ul>
-    </div>
-  </section>
+
 
   <section class="people">
     <div class="container">
@@ -126,7 +163,7 @@
  </section>
 
 
- <section class="offer">
+<!--  <section class="offer">
   <div class="container">
     <h2 class="offer__title">Мы предлагаем</h2>
     <div class="row">
@@ -144,10 +181,10 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
 
-<section class="outsource">
+<!-- <section class="outsource">
   <div class="container">
     <h2 class="outsource__title">Что обычно нам доверяют клиенты</h2>
     <div class="row">
@@ -162,44 +199,53 @@
       <div class="clearfix visible"></div>
       <div class="col-xs-6 second-row">
         <img src="images/formation.png" alt="...">
-        <!-- <p>Формирование налоговых и бухгалтерских отчетностей</p> -->
+      
         <p>Высвобождение наличных <br>денежных средств</p>
       </div>
       <div class="col-xs-6 second-row">
         <img src="images/taxes.png" alt="...">
-        <!-- <p>Высвобождение денег <br>с расчетного счета</p> -->
+    
         <p>Оптимизация системы налогообложения</p>
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
 <section class="reviews">
   <div class="container">
     <h2 class="reviews__title">Клиенты о нас</h2>
-    <div class="row">
+    <div class="reviews__item row">
       <div class="col-xs-3">
         <div class="reviews__logo">
           <img src="images/giprom_logo.png">
         </div>
       </div>
       <div class="col-xs-9">
+      <!--   <p>Хочу отблагодарить коллектив ООО “Золотые финансы”! Это команда профессионалов, полностью отвечающая нашим потребностям в ведении бухгалтерского учета. Так же, они проводят очень  полезные консультации! залог нашего успешного сотрудничества- это оперативное реагирование и высокое качество предоставляемых услуг.</p>
+      <p>ООО “гипро-м” (металлообработка на оборудовании с ЧПУ. Канашков ЮС</p> -->
+
+      <blockquote>
         <p>Хочу отблагодарить коллектив ООО “Золотые финансы”! Это команда профессионалов, полностью отвечающая нашим потребностям в ведении бухгалтерского учета. Так же, они проводят очень  полезные консультации! залог нашего успешного сотрудничества- это оперативное реагирование и высокое качество предоставляемых услуг.</p>
-        <p>ООО “гипро-м” (металлообработка на оборудовании с ЧПУ. Канашков ЮС</p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-xs-9">
-        <p>Пока я занимаюсь непосредственно оперативным управлением своей компании- все необходимые контакты с налоговыми органами осуществляются сотрудниками ООО “золотые Финансы”, и меня это полностью устраивает. Спасибо, ребята!</p>
-        <p>ООО “ТЛК ПЕРЕВОЗЧИК” (транспортная логистика), Захаров АВ</p>
-      </div>
-      <div class="col-xs-3">
-        <div class="reviews__logo">
-          <img src="images/tlk_logo.png">
-        </div>
-      </div>
+        <footer><em>Канашков Ю.С.</em><!-- , ООО “гипро-м” (металлообработка на оборудовании с ЧПУ) --> </footer>
+      </blockquote>
     </div>
   </div>
+  <div class="reviews__item row">
+    <div class="col-xs-8">
+   <!--      <p>Пока я занимаюсь непосредственно оперативным управлением своей компании- все необходимые контакты с налоговыми органами осуществляются сотрудниками ООО “золотые Финансы”, и меня это полностью устраивает. Спасибо, ребята!</p>
+   <p>ООО “ТЛК ПЕРЕВОЗЧИК” (транспортная логистика), Захаров АВ</p> -->
+   <blockquote>
+    <p>Пока я занимаюсь непосредственно оперативным управлением своей компании- все необходимые контакты с налоговыми органами осуществляются сотрудниками ООО “золотые Финансы”, и меня это полностью устраивает. Спасибо, ребята!</p>
+    <footer><em>Захаров А.В.</em><!-- , ООО “ТЛК ПЕРЕВОЗЧИК” (транспортная логистика) --></footer>
+  </blockquote>
+</div>
+<div class="col-xs-4">
+  <div class="reviews__logo">
+    <img src="images/tlk_logo.png">
+  </div>
+</div>
+</div>
+</div>
 </section>
 
 
@@ -209,29 +255,39 @@
   <div class="container">
     <h2 class="how__title">Как это будет?</h2>
     <div class="row text-center">
-      <div class="col-xs-4">
-        <img src="images/request.png" height="166" width="128" alt="">
-        <h3>Вы связываетесь с нами или оставляете заявку</h3>
-      </div>
-      <div class="col-xs-4">
-        <img src="images/consult.png" height="135" width="128" alt="">
-        <h3>Мы проводим бесплатную консультацию</h3>
-      </div>
-      <div class="col-xs-4">
-        <img src="images/solution.png" height="134" width="128" alt="">
-        <h3>Находим возможные решения</h3>
-      </div>
-      <div class="clearfix"></div>
-      <div class="col-xs-offset-2 col-xs-4">
-        <img src="images/event.png" height="128" width="128" alt="">
-        <h3>Согласовываем первичные мероприятия</h3>
-      </div>
-      <div class="col-xs-4">
-        <img src="images/task.png" height="128" width="128" alt="">
-        <h3>Берем на себя часть ваших задач</h3>
-      </div>
+      <div class="how__item col-xs-4">
+        <img class="phone" src="images/request.png" alt="">
+        <h3>Вы связываетесь с нами или оставляете заявку 
+         <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>
+       </h3>
+     </div>
+     <div class="how__item col-xs-4">
+      <img class="consult" src="images/consult.png" alt="">
+      <h3>Мы проводим бесплатную консультацию
+        <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>
+      </h3>
+    </div>
+    <div class="how__item col-xs-4">
+      <img class="solution" src="images/solution.png" alt="">
+      <h3>Находим возможные <br>решения
+        <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>
+      </h3>
+    </div>
+    <div class="clearfix"></div>
+    <div class="how__item col-xs-offset-2 col-xs-4">
+      <img class="event" src="images/event.png" alt="">
+      <h3>Согласовываем первичные мероприятия
+        <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span>
+      </h3>
+    </div>
+    <div class="how__item col-xs-4">
+      <img class="task" src="images/task.png" alt="">
+      <h3>Берем на себя часть ваших задач 
+        <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+      </h3>
     </div>
   </div>
+</div>
 </section>
 
 <section class="try">
@@ -247,25 +303,17 @@
       </div>
       <button type="submit" class="try__form-btn">Перезвоните мне</button>
     </form>
-    <div class="row">
-      <div class="col-xs-6 try__list-block">
-        <p class="try__how-title">Как это будет?</p>
-        <ol class="try__list">
-          <li>Вы связываетесь с нами или оставляете заявку</li>
-          <li>Мы проводим бесплатную консультацию</li>
-          <li>Находим возможные решения</li>
-          <li>Согласовываем первичные мероприятия</li>
-          <li>Берем на себя часть ваших задач</li>
-        </ol>
+  </div>
+</section>
 
-      </div>
-      <div class="col-xs-6 text-right">
-       <p class="try__address">Вы всегда можете позвонить или придти к нам в офис:</p>
-       <p><span class="glyphicon glyphicon-home" aria-hidden="true"></span>192029, г. Санкт-Петербург, ул. Дудко, д.3, пом.10.</p>
-       <p><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>+7 (812) 493-34-40 или +7 (921) 979-63-75</p>
-     </div>
-   </div>
+
+<div class="row">
+  <div class="col-xs-12 text-center">
+   <p><span class="glyphicon glyphicon-home" aria-hidden="true"></span>192029, г. Санкт-Петербург, ул. Дудко, д.3, пом.10.</p>
+   <p><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>+7 (812) 493-34-40 или +7 (921) 979-63-75</p>
  </div>
+</div>
+</div>
 </section>
 
 <footer class="contacts">
@@ -274,12 +322,6 @@
     <p><a href="doc/politika.pdf">Политика конфиденциальности</a></p>
   </div>
 </footer>
-
-
-
-
-
-
 
 
 
