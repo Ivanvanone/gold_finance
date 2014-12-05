@@ -8,32 +8,33 @@
   <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
   <link rel="stylesheet" href="styles/main.css">
+  <script type="text/javascript" charset="utf-8" src="//api-maps.yandex.ru/services/constructor/1.0/js/?sid=2Und9E3wwusAHucKCtTfk11e5AKQMh0J&id=map"></script>
 </head>
-<body>
+<body data-spy="scroll" data-target="#navbar">
 
-  <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <nav class="navbar" role="navigation">
     <div class="container">
       <!-- Brand and toggle get grouped for better mobile display -->
-<!--     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+      <div class="navbar-header">
+      <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
+        <span class="icon-baс пr"></span>
         <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div> -->
+      </button> -->
+      <a href="#" class="logo"></a>
+    </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <div class="collapse navbar-collapse" id="navbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
-        <li><a href="#">Link</a></li>
+        <li><a href="#services">Услуги</a></li>
+        <li><a href="#team">Команда</a></li>
+        <li><a href="#differences">Отличия</a></li>
+        <li><a href="#reviews">Отзывы</a></li>
+        <li><a href="#process">Процесс</a></li>
+        <li><a href="#request">Заявка</a></li>
+        <li><a href="#contacts">Контакты</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
@@ -44,19 +45,19 @@
 
 <header class="header">
   <div class="container">
-    <h1 class="header__title">Золотые финансы</h1>
-    <p class="header__text">Удобное бухгалтерское сопровождение бизнеса <br>Санкт-Петербурга и Москвы</p>
-    <!-- <p class="header__help">Обратитесь к нам и мы вам поможем!</p> -->
-    <button type="button" class="header__btn">Подать заявку</button>   
-  </div>
+<!--     <h1 class="header__title">Золотые финансы</h1>
+-->    <h1 class="header__text">Удобное бухгалтерское сопровождение бизнеса <br>Санкт-Петербурга и Москвы</h1>
+<!-- <p class="header__help">Обратитесь к нам и мы вам поможем!</p> -->
+<a href="#request" class="header__btn">Подать заявку</a>   
+</div>
 </header>
 
 
 
 
-  <section class="suffer">
-    <div class="container">
-      <h2 class="suffer__title">Уверены, что получаете все?</h2>
+<section class="suffer">
+  <div class="container">
+    <h2 class="suffer__title">Уверены, что получаете все?</h2>
       <!-- <p class="">Сколько денег вы недополучаете из-за того, что следуете стандартным решениям?</p>
       <p class="">До сих пор платите все налоги, и не знаете о налоговых льготах?</p>
       <p class="">Используете типовые договора, и страдаете когда что-то идет не так?</p>
@@ -70,9 +71,9 @@
     </div>
   </section>
 
-<section class="problems">
-  <div class="container">
-    <h2 class="problems__title">Передайте нам свои проблемы, мы любим их решать</h2>
+  <section id="services" class="problems">
+    <div class="container">
+      <h2 class="problems__title">Передайте нам свои проблемы, мы любим их решать</h2>
       <!-- <ul>
         <li>бухгалтерия и нулевая отчетность</li>
         <li>кадры и заработная плата</li>
@@ -81,26 +82,88 @@
         <li>круглосуточная поддержка</li>
       </ul> -->
       <div class="row text-center">
-        <div class="col-xs-4">
+        <div class="problems__item col-xs-4" data-target="accounting">
           <img src="images/bookkeeping.png" alt="...">
-          <p>Бухгалтерия и нулевая отчетность</p>
+          <p><span class="underline">Бухгалтерия и нулевая отчетность</span></p>
         </div>
-        <div class="col-xs-4">
+        <div class="problems__item col-xs-4"  data-target="zp">
           <img src="images/salary.png" alt="...">
-          <p>Кадры и заработная плата</p>
+          <p><span class="underline">Кадры и заработная плата</span></p>
         </div>
-        <div class="col-xs-4">
+        <div class="problems__item col-xs-4" data-target="consult">
           <img src="images/counseling.png" alt="...">
-          <p>Консультирование</p>
+          <p><span class="underline">Консультирование</span></p>
         </div>
         <div class="clearfix"></div>
-        <div class="col-xs-offset-2 col-xs-4 second-row">
-          <img src="images/training.png" alt="...">
-          <p>Обучение клиентов</p>
+        
+
+        <!-- ПЕРВЫЙ -->
+        <div class="problems__about accounting col-xs-12">
+          <div class="row">
+            <ul>
+              <li class="col-xs-6">работа с первичными документами</li>
+              <li class="col-xs-6">расчет и начисление заработной платы, налогов и взносов</li>
+              <li class="col-xs-6">формирование налоговой и бухгалтерской отчетности</li>
+              <li class="col-xs-6">подача отчетности в налоговые органы и внебюджетные фонды с учетом многочисленных изменений в законодательстве</li>
+            </ul>
+          </div>
         </div>
-        <div class="col-xs-4 second-row">
+
+        <!-- ВТОРОЙ -->
+        <div class="problems__about zp col-xs-12">
+          <div class="row">
+            <ul>
+              <li class="col-xs-6">Составление уставных документов</li>
+              <li class="col-xs-6">Расчет сумм выплат заработной платы</li>
+              <li class="col-xs-6">ведение журналов регистрации приказов</li>
+              <li class="col-xs-6">Подготовка расчетной ведомости</li>
+              <li class="col-xs-6">Расчет вознаграждений</li>
+              <li class="col-xs-6">Перечисление налогов и сборов</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- ТРЕТИЙ -->
+        <div class="problems__about consult col-xs-12">
+          <div class="row">
+            <ul>
+              <li class="col-xs-6">по вопросам налогообложения</li>
+              <li class="col-xs-6">по вопросам уплаты налогов и сборов, использования льгот</li>
+              <li class="col-xs-6">по вопросам законной оптимизации налогообложения</li>
+              <li class="col-xs-6">Налоговое администрирование</li>
+            </ul>
+          </div>
+        </div>
+
+
+        <div class="problems__item col-xs-offset-2 col-xs-4 second-row" data-target="training">
+          <img src="images/training.png" alt="...">
+          <p><span class="underline">Обучение клиентов</span></p>
+        </div>
+        <div class="problems__item col-xs-4 second-row" data-target="support">
           <img src="images/support.png" alt="..." >
-          <p>Поддержка клиентов</p>
+          <p><span class="underline">Поддержка клиентов</span></p>
+        </div>
+
+        <!-- ЧЕТВЕРТЫЙ -->
+        <div class="problems__about training col-xs-12">
+          <div class="row">
+            <ul>
+              <li class="col-xs-6">"Упрощенка", «ЕНВД» или "обычная с НДС"</li>
+              <li class="col-xs-6">как избежать блокировок счета</li>
+              <li class="col-xs-6">какие и когда подавать отчеты</li>
+              <li class="col-xs-6">надо ли покупать кассовый аппарат</li>
+              <li class="col-xs-6">как избежать налоговых проверок</li>
+              <li class="col-xs-6">как оформлять работников и их зарплаты</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- ПЯТЫЙ -->
+        <div class="problems__about support col-xs-12">
+          <div class="row">
+            <p class="text-center">В том числе и моральная</p>
+          </div>
         </div>
       </div>
     </div>
@@ -109,7 +172,7 @@
 
 
 
-  <section class="people">
+  <section id="team" class="people">
     <div class="container">
       <h2 class="people__title">Бухгалтерия — наше искусство.</h2>
       <p>Наши люди не работают по шаблону. Они понимают задачи бизнеса и не задают лишних вопросов.</p>
@@ -127,34 +190,34 @@
     </div>
   </section>
 
-  <section class="why">
+  <section id="differences" class="why">
     <div class="container">
       <h2 class="why__title">Почему к нам обращаются</h2>
       <div class="row">
-        <div class="col-xs-offset-1 col-xs-4">
+        <div class="col-xs-offset-1 col-xs-4 vcenter">
           <img src="images/explain.png" height="250" width="250" alt=""> 
         </div>
-        <div class="col-xs-6">
+        <div class="col-xs-6 vcenter">
           <h3>Объясняем просто</h3>
           <p>Переводим с языка цифр на русский и делаем бухгалтерию доступной для каждого</p>
         </div>
       </div>
 
       <div class="row">
-        <div class="col-xs-offset-1 col-xs-6">
+        <div class="col-xs-offset-1 col-xs-6 vcenter">
           <h3>Заботимся о вашей прибыли</h3>
           <p>Всегда думаем о дополнительных выгодах. анализируем риски и минимизируем налоговые траты</p>
         </div>
-        <div class="col-xs-4">
+        <div class="col-xs-4 vcenter">
           <img src="images/care.png" height="250" width="250" alt="">
         </div>
       </div>
 
       <div class="row">
-        <div class="col-xs-offset-1 col-xs-4">
+        <div class="col-xs-offset-1 col-xs-4 vcenter">
          <img src="images/remember.png" height="250" width="250" alt="">
        </div>
-       <div class="col-xs-6">
+       <div class="col-xs-6 vcenter">
          <h3>Помним о сроках</h3>
          <p>Мы не оставляем дел на потом и сдаем все отчеты в назначенное время. бережно относимся к работе и с любовью ведем всю документацию</p>
        </div>
@@ -211,7 +274,7 @@
   </div>
 </section> -->
 
-<section class="reviews">
+<section id="reviews" class="reviews">
   <div class="container">
     <h2 class="reviews__title">Клиенты о нас</h2>
     <div class="reviews__item row">
@@ -251,7 +314,7 @@
 
 
 
-<section class="how">
+<section id="process" class="how">
   <div class="container">
     <h2 class="how__title">Как это будет?</h2>
     <div class="row text-center">
@@ -290,7 +353,7 @@
 </div>
 </section>
 
-<section class="try">
+<section id="request" class="try">
   <div class="container">
     <h2 class="try__title">Хотите попробовать?</h2>
     <p class="try__text">Позвоните нам или оставьте заявку, и мы проведем бесплатную консультацию как вам решить свой вопрос наилучшим образом.</p>
@@ -307,19 +370,31 @@
 </section>
 
 
+<section id="contacts" class="contacts">
+  <div id="map"></div>
+  <div class="container">
+    <div class="contacts__item col-xs-4">
+      <h2>Контакты</h2>
+      <p class="contacts__phone">+7 (812) 493-34-40<br>+7 (921) 979-63-75</p>
+      <p>192029, г. Санкт-Петербург, ул. Дудко, д.3, пом.10.</p>
+      <p><span class="map-subway-icon"></span> Елизаровская</p>
+      <p>Будем рады вас видеть в будние дни с 11:00 до 19:00</p>
+    </div>
+  </div>
+</section>
+
+<!-- <div class="container">
 <div class="row">
-  <div class="col-xs-12 text-center">
+  <div class="col-xs-12">
    <p><span class="glyphicon glyphicon-home" aria-hidden="true"></span>192029, г. Санкт-Петербург, ул. Дудко, д.3, пом.10.</p>
    <p><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>+7 (812) 493-34-40 или +7 (921) 979-63-75</p>
  </div>
 </div>
-</div>
-</section>
+</div> -->
 
-<footer class="contacts">
+<footer class="footer">
   <div class="container">
-    <p>Производство и лидогенерация - Интерактивное агентство Красная Гвардия</p>
-    <p><a href="doc/politika.pdf">Политика конфиденциальности</a></p>
+    <p>Производство и лидогенерация - Интерактивное агентство Красная Гвардия <br><a href="doc/politika.pdf">Политика конфиденциальности</a></p>
   </div>
 </footer>
 
@@ -327,10 +402,9 @@
 
 
 
+<script src="//yastatic.net/jquery/2.1.1/jquery.min.js"></script>
 <!-- build:js scripts/main.js -->
-<script src="bower_components/jquery/jquery.js"></script>
 <script src="scripts/main.js"></script>
-<script src="scripts/hello.js"></script>
 <!-- endbuild -->
 
 <!-- build:js scripts/vendor/bootstrap.js -->
