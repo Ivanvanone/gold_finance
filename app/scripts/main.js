@@ -22,8 +22,6 @@ $( ".problems__item" ).click(function() {
 		
 		$(".problems__item--active").not(activeItem).removeClass("problems__item--active");
 	}
-
-	
 });
 
 
@@ -34,3 +32,5 @@ $("#navbar a, .logo, .header__btn").click(function() {
 		scrollTop: $(link).offset().top
 	}, 500);
 });
+
+$("#phone-input").mask("+7 (999)-99-9999");
