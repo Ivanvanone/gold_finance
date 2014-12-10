@@ -2,10 +2,10 @@
 
 $phone = htmlspecialchars($_POST["phone"]); // пишем данные в переменные
 $to = "v7rulnik@gmail.com";
-// gbf@g-fin.ru
+// $to= "gbf@g-fin.ru"; // их почта
 $subject = "Заявка с Gold finance";
 $message = "Новая заявка" . "\r\n" . "{$phone}";
-$headers = "From: mail@gold-finance.ru" . "\r\n" . "BCC: kate@rguard.ru, vozhd@gruard.ru";
+$headers = "From: mail@gold-finance.ru" . "\r\n" . "BCC: kate@rguard.ru, vozhd@rguard.ru";
 // mail($to,$subject,$message,$headers);
 
 
