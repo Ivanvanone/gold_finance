@@ -4,7 +4,7 @@ $phone = htmlspecialchars($_POST["phone"]); // пишем данные в пер
 $to = "v7rulnik@gmail.com";
 $subject = "Заявка с Gold finance";
 $message = "Новая заявка" . "\r\n" . "{$phone}";
-$headers = "From: mail@goldfinance.ru" . "\r\n" . "BCC: kate@rguard.ru";
+$headers = "From: mail@gold-finance.ru" . "\r\n" . "BCC: kate@rguard.ru, vozhd@gruard.ru";
 // mail($to,$subject,$message,$headers);
 
 
