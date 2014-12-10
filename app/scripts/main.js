@@ -105,50 +105,50 @@ $(document).ready(function() {
 
 
 
-var isMobile = {
-    Android: function() {
-        return navigator.userAgent.match(/Android/i);
-    },
-    BlackBerry: function() {
-        return navigator.userAgent.match(/BlackBerry/i);
-    },
-    iOS: function() {
-        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
-    },
-    Opera: function() {
-        return navigator.userAgent.match(/Opera Mini/i);
-    },
-    Windows: function() {
-        return navigator.userAgent.match(/IEMobile/i);
-    },
-    any: function() {
-        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
-    }
-};
+// var isMobile = {
+//     Android: function() {
+//         return navigator.userAgent.match(/Android/i);
+//     },
+//     BlackBerry: function() {
+//         return navigator.userAgent.match(/BlackBerry/i);
+//     },
+//     iOS: function() {
+//         return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+//     },
+//     Opera: function() {
+//         return navigator.userAgent.match(/Opera Mini/i);
+//     },
+//     Windows: function() {
+//         return navigator.userAgent.match(/IEMobile/i);
+//     },
+//     any: function() {
+//         return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+//     }
+// };
 
-var map;
+// var map;
 
-// Дождёмся загрузки API и готовности DOM.
-ymaps.ready(function init () {
-    // Создание экземпляра карты и его привязка к контейнеру с
-    // заданным id ("map").
-    map = new ymaps.Map('map', {
-        // При инициализации карты обязательно нужно указать
-        // её центр и коэффициент масштабирования.
-        center: [59.88855963, 30.42619439], // Москва
-        zoom: 13,
-        controls: ['zoomControl', 'fullscreenControl']
-    });
+// // Дождёмся загрузки API и готовности DOM.
+// ymaps.ready(function init () {
+//     // Создание экземпляра карты и его привязка к контейнеру с
+//     // заданным id ("map").
+//     map = new ymaps.Map('map', {
+//         // При инициализации карты обязательно нужно указать
+//         // её центр и коэффициент масштабирования.
+//         center: [59.88855963, 30.42619439], // Москва
+//         zoom: 13,
+//         controls: ['zoomControl', 'fullscreenControl']
+//     });
 
-    if(isMobile.any()){
-    	map.behaviors.disable(['drag', 'multiTouch']);
-    };
-    // var goldFinance = new ymaps.Placemark([59.88756176, 30.43945850]);
-    var goldFinance = new ymaps.Placemark([59.88756176, 30.43945850], {}, {
-    	preset: 'twirl#darkgreenIcon'
-    });
-    map.geoObjects.add(goldFinance);
-});
+//     if(isMobile.any()){
+//     	map.behaviors.disable(['drag', 'multiTouch']);
+//     };
+//     // var goldFinance = new ymaps.Placemark([59.88756176, 30.43945850]);
+//     var goldFinance = new ymaps.Placemark([59.88756176, 30.43945850], {}, {
+//     	preset: 'twirl#darkgreenIcon'
+//     });
+//     map.geoObjects.add(goldFinance);
+// });
 
 
 
